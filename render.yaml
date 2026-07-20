@@ -1,7 +1,6 @@
 services:
   - type: web
     name: aboud-bot
-    env: docker
     image:
       url: docker.io/mido101/sourceaboud:latest
     envVars:
