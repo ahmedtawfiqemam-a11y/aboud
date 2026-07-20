@@ -6,15 +6,25 @@ services:
       url: docker.io/mido101/sourceaboud:latest
     envVars:
       - key: API_ID
+        sync: false
       - key: API_HASH
+        sync: false
       - key: BOT_TOKEN
+        sync: false
       - key: WHISPER_BOT_TOKEN
+        sync: false
       - key: QRAN_BOT_TOKEN
+        sync: false
       - key: WHATSAPP_BOT_TOKEN
+        sync: false
       - key: GROQ_API_KEY
+        sync: false
       - key: DATABASE_URL
+        sync: false
       - key: GITHUB_TOKEN
+        sync: false
       - key: GIST_ID
+        sync: false
       - key: The_OwnDev_Can_Run_Only
         value: "ABOUD_87E7CAA14B42BCF73A3D70EB"
       - key: PYTHONUNBUFFERED
