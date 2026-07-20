@@ -1,10 +1,10 @@
 services:
   - type: web
     name: aboud-bot
-    env: image
-    image:
-      url: docker.io/mido101/sourceaboud:latest
+    env: docker
     envVars:
+      - key: GITHUB_CLONE_TOKEN
+        sync: false
       - key: API_ID
         sync: false
       - key: API_HASH
