@@ -1,7 +1,18 @@
 services:
   - type: web
     name: aboud-bot
-    env: docker
+    env: python
+    plan: free
+    buildCommand: >-
+      git clone https://$GITHUB_CLONE_TOKEN@github.com/ahmedtawfiqemam-a11y/SOURCEAboud.git /tmp/src &&
+      cp -r /tmp/src/. . &&
+      apt-get install -y libmagic1 libmagic-dev nodejs npm golang-go ffmpeg portaudio19-dev &&
+      pip install --ignore-installed -r requirements.txt &&
+      cd baileys_service && npm install --production && cd .. &&
+      bash build_sniper.sh || true
+    startCommand: bash start.sh
+    healthCheckPath: /health
+    pythonVersion: 3.11.0
     envVars:
       - key: GITHUB_CLONE_TOKEN
         sync: false
@@ -33,3 +44,5 @@ services:
         value: "3001"
       - key: PYTHON_WEBHOOK
         value: "http://localhost:5000/wa_webhook"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
