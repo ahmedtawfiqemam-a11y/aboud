@@ -12,7 +12,6 @@ services:
       bash build_sniper.sh || true
     startCommand: bash start.sh
     healthCheckPath: /health
-    pythonVersion: 3.11.0
     envVars:
       - key: GITHUB_CLONE_TOKEN
         sync: false
