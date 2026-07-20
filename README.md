@@ -1,17 +1,16 @@
-# 🚀 Deploy Aboud Bot
+# 🚀 تشغيل Aboud Bot على Render
 
-اضغط الزرار وشغّل المشروع على Render في دقيقة واحدة.
+## الخطوة الوحيدة: اضغط الزرار
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ahmedtawfiqemam-a11y/aboud)
 
 ---
 
-## المتطلبات
-
-بعد الضغط على الزرار، هتحتاج تدخل هذه المتغيرات:
+## المتغيرات اللي هتحتاج تملاها
 
 | المتغير | الوصف |
 |---|---|
+| `GITHUB_CLONE_TOKEN` | ⭐ التوكن اللي بعتهولك صاحبك |
 | `API_ID` | Telegram API ID |
 | `API_HASH` | Telegram API Hash |
 | `BOT_TOKEN` | توكن البوت الرئيسي |
@@ -20,5 +19,5 @@
 | `WHATSAPP_BOT_TOKEN` | توكن واتساب |
 | `GROQ_API_KEY` | مفتاح Groq |
 | `DATABASE_URL` | رابط قاعدة البيانات |
-| `GITHUB_TOKEN` | توكن GitHub |
+| `GITHUB_TOKEN` | توكن GitHub الخاص بيك |
 | `GIST_ID` | معرّف الـ Gist |
